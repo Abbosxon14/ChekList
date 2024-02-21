@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.A{
+    width: 100%;
+    height: 100vb;
+    margin: 0 auto;
+    border: 1px solid;
+    background-color: rgb(249, 245, 239);
+}
+form{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* background-color: rgb(224, 255, 239); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.AA, .AS, .AD{
+    width: 200PX;
+    height: 50PX;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid orange;
+    border-radius: 20px;
+}
+.A2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width: 420px; */
+    gap: 20px;
+}
+.AF{
+    width: 150px;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: italic;
+    border: 1px solid orange;
+    outline: none;
+    border-radius: 20px;
+}
+.AF:hover{
+    background-color: orange;
+    color: white;
+}
+.AH{
+    background-color: rgb(202, 202, 202);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: italic;
+    border: 1px solid rgb(84, 84, 84);
+    outline: none;
+    border-radius: 20px;
+}
+.AH:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+
+}
+.B{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.AAA, .ADA, .ASA{
+    width: 200px;
+    height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl002.css">
+</head>
+<body>
+    <div class="A">
+        <form action="" id="A1">
+            <input class="AA"  type="text" id="T" placeholder="Имя..."  >
+            <input class="AS" type="number" id="V" placeholder="Возраст..."  >
+            <input class="AD"  type="number" id="N" placeholder="Номер..."  >
+            <div class="A2" div>
+                <button class="AF" data-clear-selector="input">Vvesti</button>
+                <button class="AH" data-clear-selector="input">Udalit</button>
+            </div>
+        </form>
+        <div class="B">
+            <h2 class="AAA"></h2>
+            <h2 class="ASA"></h2>
+            <h2 class="ADA"></h2>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("A1").addEventListener("submit", function(event){
+            event.preventDefault();
+    
+            document.querySelector('.AF').onclick = DDD;
+            function DDD(){
+
+            let a = document.querySelector('.AA').value;
+            console.log("Имя: ", a);
+            document.querySelector('.AAA').innerHTML = a;
+            let b = document.querySelector('.AS').value;
+            console.log("Возраст: ", b);
+            document.querySelector('.ASA').innerHTML = b;
+            let c = document.querySelector('.AD').value;
+            console.log("Номер: ", c);
+            document.querySelector('.ADA').innerHTML = c;}
+
+            let T = document.getElementById("T");
+            let V = document.getElementById("V");
+            let N = document.getElementById("N");
+
+            if (!T.value){
+                alert("VVEDITE IMYA");
+                return;} 
+            if(V.value.length < 2){
+                alert("VVEDITE VOZRAST");
+                return;} 
+            if(N.value.length < 8){
+                alert("VVEDITE NOMER");
+                return;}   
+        });
+
+
+        document.querySelectorAll('.AH')
+                .forEach(function(elem){
+                    elem.onclick = function(e){
+                        let selector = this.dataset.clearSelector;
+                        document.querySelectorAll(selector)
+                        .forEach(function(item){
+                            item.value = ""
+                        })
+                    }
+                })
+
+    </script>
+</body>
+</html>
